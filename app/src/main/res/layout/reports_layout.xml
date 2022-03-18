@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:strokeWidth="0dp"
+        app:strokeColor="@color/colorPrimary"
+        app:cardElevation="2dp"
+        android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="4dp">
+
+
+    <RelativeLayout
+        android:id="@+id/shape_layout"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myCardView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/roundedimag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/shape_layout"
+            android:text="Report As On "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/report_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/date_title"
+            android:text="22-11-2020"
+            android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/viewreport_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Report"
+        android:layout_toEndOf="@id/shape_layout"
+        android:layout_below="@id/date_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/balck_circular_corners"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+

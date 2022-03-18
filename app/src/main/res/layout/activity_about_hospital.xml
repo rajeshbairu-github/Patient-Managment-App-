@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFDE03"
+    android:padding="10dp"
+    tools:context=".About_hospital">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:strokeWidth="0dp"
+        app:strokeColor="@color/colorPrimary"
+        app:cardElevation="2dp"
+        android:layout_margin="4dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/hospital_buildings"/>
+
+            <View android:id="@+id/tile_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/dividerVertical" />
+
+
+            <TextView
+                android:id="@+id/hospitalname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Appollo Hospitals"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginStart="3dp"/>
+
+            <TextView
+                android:id="@+id/hospital_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/hospital_description"
+                android:textColor="#0E0E0E"
+                android:justificationMode="inter_word"/>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    </ScrollView>
+
+
+</LinearLayout>

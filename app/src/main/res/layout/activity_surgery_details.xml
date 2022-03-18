@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+    android:background="#FFDE03"
+tools:context=".surgery_details">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:strokeWidth="0dp"
+        app:strokeColor="@color/colorPrimary"
+        app:cardElevation="2dp"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surgery Name"
+                android:textSize="14sp"
+                android:textColor="#616161"/>
+            <TextView
+                android:id="@+id/surgeryname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart ByPass Surgery"
+                android:layout_marginStart="20dp"
+                android:textSize="16dp"
+                android:textColor="#212121"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:strokeWidth="0dp"
+        app:strokeColor="@color/colorPrimary"
+        app:cardElevation="2dp"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Surgery"
+                android:textSize="14sp"
+                android:textColor="#616161"/>
+            <TextView
+                android:id="@+id/do_surgery_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21-01-2021"
+                android:layout_marginStart="20dp"
+                android:textSize="16dp"
+                android:textColor="#212121"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surgery Description"
+                android:textSize="14sp"
+                android:textColor="#616161"/>
+            <TextView
+                android:id="@+id/surgery_description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decrciption Here"
+                android:layout_marginStart="20dp"
+                android:textSize="16dp"
+                android:textColor="#212121"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Before Surgery"
+                android:textSize="14sp"
+                android:textColor="#616161"/>
+            <ImageView
+                android:id="@+id/before_surgery"
+                android:background="@drawable/black_borders_rounded_corners"
+                android:padding="1dp"
+                android:src="@drawable/surgery_before"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="After Surgery"
+                android:textSize="14sp"
+                android:textColor="#616161"/>
+            <ImageView
+                android:id="@+id/after_surgery"
+                android:background="@drawable/black_borders_rounded_corners"
+                android:padding="1dp"
+                android:src="@drawable/surgery_after"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="3dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+
+</ScrollView>

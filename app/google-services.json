@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "572916193915",
+    "firebase_url": "https://patientdata-a868f-default-rtdb.firebaseio.com",
+    "project_id": "patientdata-a868f",
+    "storage_bucket": "patientdata-a868f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572916193915:android:18dc172ff8c75a687420de",
+        "android_client_info": {
+          "package_name": "com.example.hospital_try_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572916193915-gv72h68nafatoi4b0apj8m6hq555stft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwc8JriieFS3Jkm3PYQ8JDvSGhNKvcEZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572916193915-gv72h68nafatoi4b0apj8m6hq555stft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
